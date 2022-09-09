@@ -18,10 +18,11 @@ public class Eratosthenes {
 		List<Integer> arraylist = new ArrayList<>();
 		       
 		
-		
+		          
 		     for (int i=1; i<=n; i++) {
 		    	 arraylist.add(i);
 		    	 System.out.println(arraylist);
+		    	
 			 }
 		     
 	             
