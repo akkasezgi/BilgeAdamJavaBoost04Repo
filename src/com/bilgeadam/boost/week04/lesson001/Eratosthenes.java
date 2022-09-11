@@ -9,9 +9,12 @@ public class Eratosthenes {
 	     System.out.println("Enter n: ");
 	     if (!scan.hasNextInt()) {
 	        System.err.println("Please enter a number!");
+	        scan.close();
 	        return;
 	     }
+	    
          sieveOfEratosthenes(scan.nextInt());
+         scan.close();
 	}
 
     private static void sieveOfEratosthenes(int n) {

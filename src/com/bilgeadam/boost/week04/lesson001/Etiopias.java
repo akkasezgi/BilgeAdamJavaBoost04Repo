@@ -10,6 +10,7 @@ class Etiopias {
 	
 	public static void main(String[] args) {
 		new Etiopias().etiophiasmultiply();
+		
 	}
 	
 	public void etiophiasmultiply() {
@@ -17,16 +18,20 @@ class Etiopias {
 	    System.out.println("Enter a first number: ");
 	    if (!scan.hasNextInt()) {
 	        System.err.println("Please enter a number!");
+	        scan.close();
 	        return;
 	    }
 	    int a = scan.nextInt();
 	    System.out.println("Enter a second number: ");
 	    if (!scan.hasNextInt()) {
 	        System.err.println("Please enter a number!");
+	        scan.close();
 	        return;
 	    }
 	    int b = scan.nextInt();
 	    System.out.println("Result: " + multiply(a, b));
+	    scan.close();
+	   
 	}
 
 	private int multiply(int a1, int a2) {
