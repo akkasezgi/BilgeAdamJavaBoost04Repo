@@ -35,16 +35,13 @@ public class Frantions {
 		System.out.println("2 for subtraction");
 		System.out.println("3 for multiply");
 		System.out.println("4 for division");
-		if (!sc.hasNextInt()) {
-			System.err.println("please enter a NUMBER!!");
-		}else {
-		
+				
 		int selection = sc.nextInt();
 		ebob(selection, num1, num2, denom1, denom2);
 		
 		sc.close();
 	  }
-	}
+	
 	
 	private static void ebob(int selection, int num1, int num2, int denom1, int denom2) {
 

@@ -10,10 +10,8 @@ public class Backtracking {
 		
 		backs();
 	
-
 	}
 
-	
 	
 	private static void backs() {
 	
@@ -21,7 +19,6 @@ public class Backtracking {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("enter a word key: ");
 		String myWord = scan.next();
-		
 		String array [] = new String[myWord.length()];
 		char ch = myWord.charAt(0);
 		 
@@ -38,15 +35,7 @@ public class Backtracking {
 	    }  else {
 		   System.err.println("wrong entry!! please enter a word key");
 	}
-	
-	
-	
-		
-		
 
-
+       scan.close();
 	}
-
-	
-
 }

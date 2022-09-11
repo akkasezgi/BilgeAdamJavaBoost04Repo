@@ -1,4 +1,4 @@
-package com.bilgeadam.boost.week04.lesson001;
+package com.bilgeadam.boost.week03.lesson005;
 
 import java.util.Scanner;
 
