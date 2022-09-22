@@ -73,7 +73,7 @@ public class SomeOtherStreamFeatures {
 	    //noneMatch
 	    boolean match3 = list.stream().noneMatch(number -> number > 2);
 	    System.out.println(match3);
-	    
+	    System.out.println();
 	}
 
 }

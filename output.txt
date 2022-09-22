@@ -1,0 +1,1 @@
+Bu metin output.txt dosyasına yazılacak
