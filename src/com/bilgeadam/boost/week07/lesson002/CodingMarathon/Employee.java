@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 public class Employee extends Person {
 
-	private Person person;
+	//private Person person;
 	private LocalDate startDate;
 	private LocalDate finishDate;
 	private String regNumber;
@@ -24,7 +24,10 @@ public class Employee extends Person {
 	
 	public Employee(Person person, LocalDate startDate, LocalDate finishDate, Salary salary) {
 		super();
-		this.person = person;
+		//this.person = person;
+		this.setName(person.getName());
+		this.setLastName(person.getLastName());
+		this.setCitizenId(person.getCitizenId());
 		this.startDate = startDate;
 		this.finishDate = finishDate;
 		this.salary = salary;
@@ -34,16 +37,6 @@ public class Employee extends Person {
 	
 	public Employee(long citizenId, String name, String lastName) {
 		super(citizenId, name, lastName);
-	}
-
-
-	public Person getPerson() {
-		return person;
-	}
-
-
-	public void setPerson(Person person) {
-		this.person = person;
 	}
 
 
@@ -80,8 +73,8 @@ public class Employee extends Person {
 	}
 
 
-	public double getSalary() {
-		return salary.getSalary();
+	public Salary getSalary() {
+		return salary;
 	}
 
 	public void setSalary(Salary salary) {
@@ -99,7 +92,7 @@ public class Employee extends Person {
 
 	@Override
 	public String toString() {
-		return "Employee [person=" + person + ", startDate=" + startDate + ", finishDate=" + finishDate + ", regNumber="
+		return "Employee [Name  + " + getFullName() + "startDate=" + startDate + ", finishDate=" + finishDate + ", regNumber="
 				+ regNumber + ", salary=" + salary.toString() + "]";
 	}
 
