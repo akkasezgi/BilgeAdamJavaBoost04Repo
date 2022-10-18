@@ -114,7 +114,7 @@ public class Accounting {
 				return;
 
 			}
-			sc.close();
+			
 		}
 	}
 
@@ -133,6 +133,10 @@ public class Accounting {
 				new Salary(7500, WorkingType.PART_TIME)));
 		employeeList.add(new Employee(new Person(12312312317L, "Cansu", "Koc"), LocalDate.of(2020, 5, 6), null,
 				new Salary(9000, WorkingType.PART_TIME)));
+		
+		
+		System.out.println(employeeList);
 	}
 
+	
 }

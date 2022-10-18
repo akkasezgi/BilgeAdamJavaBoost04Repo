@@ -61,14 +61,14 @@ public class Employee extends Person {
 
 
 	public String getRegNumber() {
-		
-     	this.regNumber = String.format("%s%04d", startDate.getYear(),  ++Employee.numOfEmployees); 
+	
 		return regNumber;
 		
 	}
 
 
 	public void setRegNumber(String regNumber) {
+		this.regNumber = String.format("%s%04d", startDate.getYear(),  ++Employee.numOfEmployees); 
 		this.regNumber = regNumber;
 	}
 

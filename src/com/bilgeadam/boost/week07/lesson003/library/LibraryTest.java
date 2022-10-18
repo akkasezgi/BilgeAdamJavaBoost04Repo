@@ -67,15 +67,16 @@ public class LibraryTest {
 
 		if (select.equalsIgnoreCase("H")) {
 
+			Person personx = new Person();
 			System.out.println("Uyelik sayfasina yonlendiriliyorsunuz....");
 			System.out.println("Lutfen kullanici adi giriniz: ");
-			p2.setMemberName(sc.nextLine());
+			personx.setMemberName(sc.nextLine());
 			System.out.println("Lutfen kullanici maili giriniz: ");
-			p2.setMemberLastname(sc.nextLine());
+			personx.setMemberLastname(sc.nextLine());
 			
 			
 
-			System.out.println("Hosgeldiniz " + p2.getMemberName());
+			System.out.println("Hosgeldiniz " + personx.getMemberName());
 			
 
 		} else if (select.equalsIgnoreCase("E")) {
@@ -84,7 +85,12 @@ public class LibraryTest {
 			System.out.println("Kullanici maili: ");
 			String newMemberMail = sc.nextLine();
 			
-			if (personList.stream().filter()
+			long count= personList.stream()
+					.filter(person -> person.getMemberName().equalsIgnoreCase(newMemberName)&&
+									  person.getMemberLastname().equalsIgnoreCase(newMemberMail))
+					.count();
+			System.out.println(count);
+
 
 //			if (personList.stream().forEach(null) && memberMail.equalsIgnoreCase(memberMail)){
 //				

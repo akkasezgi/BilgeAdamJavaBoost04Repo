@@ -1,0 +1,7 @@
+package com.bilgeadam.boost.week08.otelsystem;
+
+public enum OtelType {
+	
+	ULTRA_ALL_INCLUSIVE, ALL_INCLUSIVE, ROOM_BREAKFAST, FULL_PENSION, HALF_PENSION, BED_ONLY, FULL_CREDIT_WITHOUT_ALCOHOL;
+
+}
