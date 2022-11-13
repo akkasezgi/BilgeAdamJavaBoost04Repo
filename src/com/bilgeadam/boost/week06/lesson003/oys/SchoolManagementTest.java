@@ -32,7 +32,7 @@ public class SchoolManagementTest {
 		case 1: {
 			
 			System.out.println("Personel ad-soyad giriniz: ");
-			String name= sc.next();
+			q2String name= sc.next();
 			System.out.println("Lutfen cinsiyet giriniz: ");
 			String gender = sc.next();
 			Gender gender1;
